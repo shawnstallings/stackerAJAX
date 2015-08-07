@@ -10,7 +10,7 @@ $(document).ready( function() {
 
 	$('.inspiration-getter').submit( function(event){
 		//Zero out results if previous search has run
-		//$('.results').html('');
+		$('.results').html('');
 		//Get the value of the tags the user submitted
 		var answerersTag = $(this).find("input[name='getter']").val();
 			getAnswerers(answerersTag);
