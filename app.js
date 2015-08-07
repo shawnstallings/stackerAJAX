@@ -134,7 +134,7 @@ var getAnswerers = function(answerersTag) {
 	// the parameters we need to pass in our request to StackOverflow's API
 	var request = {		//tag: answerersTag, ------ did not work, had to put in url
 						site: 'stackoverflow',};
-						//period: 'all_time' ------ did not work, had to put in url
+						//period: 'all_time'------ did not work, had to put in url
 	
 	var result = $.ajax({
 		url: "http://api.stackexchange.com/2.2/tags/" + answerersTag + "/top-answerers/all_time",
